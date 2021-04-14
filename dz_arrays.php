@@ -57,13 +57,13 @@ foreach ($array as list($a1, $a2, $a3)) {
 // $a3 = 'bb';
 
 // Вызываем функцию 1
-$func1 = (getFunction1($a1,$a2,$a3));
+$func1 = getFunction1($a1,$a2,$a3);
 
 // Вызываем функцию 2
-$func2 = (getFunction2($func1));
+$func2 = getFunction2($func1);
 
 // Вызываем функцию 3
-$func3 = (getFunction3($a1));
+$func3 = getFunction3($a1);
 
 //Выводим результат функции 1
 echo "$func1 <br>";
