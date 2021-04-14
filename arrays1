@@ -1,0 +1,32 @@
+<pre>
+<?php
+// пустой массив.
+$my_friends = [];
+
+// заполненный массив.
+$cats = ["Игры", "Приколы", "Фейлы"];
+
+// добавление эллементов в массив.
+$my_friends[] = "Winnie The Pooh";
+array_push($my_friends, "Tigger");
+
+// чтение элемента по индексу.
+print($cats[0]);
+print(array_shift($cats));
+
+// замена элемента по индексу.
+$cats[0] = "Офис";
+
+// узнать всё содержимое массива.
+var_dump($cats);
+
+// получить первый элемент массива.
+print($cats[0]);
+print(array_shift($cats));
+
+// получить последний элемент массива.
+print($cats[count($cats) - 1]);
+print(array_pop($cats));
+
+
+?>
